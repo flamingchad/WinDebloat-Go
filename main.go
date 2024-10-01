@@ -1,9 +1,9 @@
 package main
 
 func main() {
-	//disableDiagTrack()
-	//disableTelemetry()
-	//disableWeatherAndNews()
-	//removeBing()
+	disableDiagTrack()
+	disableTelemetry()
+	disableWeatherAndNews()
+	removeBing()
 	disableCopilot()
 }
