@@ -23,7 +23,7 @@ WinDebloat-Go is a lightweight CLI tool built with Go to help users remove unwan
 2. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/yourusername/WinDebloat-Go.git
+    git clone https://github.com/flamingchad/WinDebloat-Go.git
     cd WinDebloat-Go
     ```
 
