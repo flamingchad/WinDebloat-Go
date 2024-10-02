@@ -6,7 +6,7 @@ import (
 	"log"
 )
 
-func disableTelemetry() {
+func DisableTelemetry() {
 	k, err := registry.OpenKey(registry.LOCAL_MACHINE, `SOFTWARE\Policies\Microsoft\Windows\DataCollection`,
 		registry.QUERY_VALUE|registry.SET_VALUE)
 	if err != nil {
@@ -32,7 +32,7 @@ func disableTelemetry() {
 	}
 }
 
-func disableWeatherAndNews() {
+func DisableWeatherAndNews() {
 	keyPath := `SOFTWARE\Policies\Microsoft\Dsh`
 	k, _, err := registry.CreateKey(registry.LOCAL_MACHINE, keyPath, registry.SET_VALUE)
 	if err != nil {
@@ -51,7 +51,7 @@ func disableWeatherAndNews() {
 	}
 }
 
-func removeBing() {
+func RemoveBing() {
 	keyPath := `Software\Policies\Microsoft\Windows\Explorer`
 	k, _, err := registry.CreateKey(registry.LOCAL_MACHINE, keyPath, registry.SET_VALUE)
 	if err != nil {
@@ -70,7 +70,7 @@ func removeBing() {
 	}
 }
 
-func disableCopilot() {
+func DisableCopilot() {
 	keyPath := `SOFTWARE\Policies\Microsoft\Windows\WindowsCopilot`
 	k, _, err := registry.CreateKey(registry.LOCAL_MACHINE, keyPath, registry.SET_VALUE)
 	if err != nil {
