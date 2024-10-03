@@ -1,5 +1,7 @@
-package main
+package WinDebloat
+
+import "WinDebloat-Go/cmd"
 
 func main() {
-	Execute()
+	cmd.Execute()
 }
