@@ -18,7 +18,7 @@ var rootCmd = &cobra.Command{
 
 func Execute() {
 	if err := rootCmd.Execute(); err != nil {
-		fmt.Println(err)
+		fmt.Println("error while executing cobra, error: ", err)
 		os.Exit(1)
 	}
 }
@@ -32,4 +32,5 @@ func init() {
 	rootCmd.AddCommand(disableWeatherAndNewsCmd)
 	rootCmd.AddCommand(disableCopilot)
 	rootCmd.AddCommand(removeBing)
+	rootCmd.AddCommand(disableAdsExplorer)
 }

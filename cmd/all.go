@@ -14,5 +14,6 @@ var all = &cobra.Command{
 		functions.RemoveBing()
 		functions.DisableCopilot()
 		functions.DisableTelemetry()
+		functions.DisableAdsExplorer()
 	},
 }
