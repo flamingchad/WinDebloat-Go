@@ -36,3 +36,12 @@ var disableCopilot = &cobra.Command{
 		functions.DisableCopilot()
 	},
 }
+
+var disableAdsExplorer = &cobra.Command{
+	Use:   "disable-ads-explorer",
+	Short: "Removes Ads Explorer",
+	Long:  "Removes the File Explorer Ads (OneDrive, New Features etc.)...",
+	Run: func(cmd *cobra.Command, args []string) {
+		functions.DisableAdsExplorer()
+	},
+}
